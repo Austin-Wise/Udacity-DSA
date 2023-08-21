@@ -1,0 +1,21 @@
+Reading data from CSV files is worst-case O(n), as you are iterating over each record in the file exactly once and
+storing it into memory. The analysis for the following tasks will not take reading data from CSVs into account.
+
+Task 0: O(1)
+Printing records doesn't involve any iterative process. It is a constant time operation, therefore O(1).
+
+Task 1: O(n)
+Overall worst-case time complexity for iterating over 'calls' and 'texts' exactly once for each has an overall time
+complexity of O(n), as time increases linearly with the number of input records.
+
+Task 2: O(n)
+Worst-case time complexity for the unique_directory function is O(n), as is max_dur. These are both linear to the number
+ of records in the datasets.
+
+Task 3: O(n log n)
+Due to the sorting in the bngl_outgoing function, the overall time complexity for this program is O(n log n). Without
+sorting, the program would return O(n), as pct_fixed_bngl and print_a are both O(n).
+
+Task 4: O(n log n)
+Due to the sorting in the potential_telemarketers, the overall time complexity for this program is O(n log n). Without
+sorting, worst-case time complexity would be O(n), as each iterate over each record a single time without nested operations.
